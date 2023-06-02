@@ -11,9 +11,9 @@ export default function NavBar() {
         <span>
           <Link to="/nft">NFT</Link>
         </span>
-        <span>
+        {/* <span>
           <Link to="/watchlist">Watchlist</Link>
-        </span>
+        </span> */}
       </div>
     </nav>
   );
