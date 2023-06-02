@@ -2,20 +2,24 @@ import { create } from "zustand";
 import axios from "axios";
 
 const globalStore = create((set) => ({
+  globalData: [],
 
-  fetchNFT: async () => {
-    const resNFT = await axios.get(
-      `https://api.coingecko.com/api/v3/nfts/list?order=market_cap_usd_desc&per_page=5`
-    );
+  fetchGlobal: async () => {
+    const res = await axios.get(`https://api.coingecko.com/api/v3/global`);
+    console.log(res);
 
+    const globalData = [
+      { name: "allCoins", value: res.data.data.active_cryptocurrencies },
+      { name: "exchanges", value: res.data.data.markets },
+      { name: "marketCap", value: res.data.data.total_market_cap.usd },
+      { name: "btcDom", value: res.data.data.market_cap_percentage.btc },
+      { name: "ethDom", value: res.data.data.market_cap_percentage.eth },
+      { name: "bnbDom", value: res.data.data.market_cap_percentage.bnb },
+    ];
 
-      return {
+    set({ globalData });
 
-      };
-
-
-
-    set({  });
+    return globalData;
   },
 }));
 

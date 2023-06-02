@@ -12,7 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import Header from "./Header";
-import GlobalStats from "./GlobalStats";
+import GlobalStats from "./GlobalData";
 import NavBar from "./NavBar";
 
 export default function CoinData() {

@@ -3,7 +3,7 @@ import homeStore from "../stores/homeStore";
 import Header from "../components/Header";
 import TrendingCoins from "../components/TrendingCoins";
 import NavBar from "../components/NavBar";
-import GlobalStats from "../components/GlobalStats";
+import GlobalData from "../components/GlobalData";
 
 export default function Home() {
   const store = homeStore();
@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <div>
-      <GlobalStats />
+      <GlobalData />
       <Header />
       <NavBar />
       {showTrendingCoins ? (
