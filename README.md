@@ -5,10 +5,15 @@ CoinBox is a cryptocurrency and NFT tracking platform, providing real-time insig
 
 ### Technical Used
 Language: Javascript 
+
 Library: React.js
+
 Fetch API: Axios
+
 API Source: coingecko.com
+
 State Management: Zustand 
+
 Style Extension: Sass 
 
 ### Wireframes
