@@ -19,9 +19,9 @@ export default function GlobalData() {
       <span>Exchanges: {getValue("exchanges")}</span>
       <span>Market Cap: ${getValue("marketCap").toLocaleString()}</span>
       <span>Dominance:</span>
-      <span>BTC {getValue("btcDom").toFixed(2)}%</span>
-      <span>ETH {getValue("ethDom").toFixed(2)}%</span>
-      <span>BNB {getValue("bnbDom").toFixed(2)}%</span>
+      <span>BTC {getValue("btcDom").toLocaleString()}%</span>
+      <span>ETH {getValue("ethDom").toLocaleString()}%</span>
+      <span>BNB {getValue("bnbDom").toLocaleString()}%</span>
     </div>
   );
 }
