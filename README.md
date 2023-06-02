@@ -38,11 +38,7 @@ User is able to navigate to Cryptocurrencies to see all available coins in the m
 User is able to navigate to NFT to see the current top 5 NFT and see the data. (in progress) 
 
 ## Planning and Development Process
-I took inspiration from a few cryptocurrency tracking websites and made a wireframe on Figma. 
-
-The app has to be able to extract latest data from the market. So I chose a reliable CoinGecko API.
-
-The app has to be simple enough for user to understand how to use it and display data intuitively.
+I took inspiration from a few cryptocurrency tracking websites and made a wireframe on Figma. The app has to be able to extract latest data from the market. So I chose a reliable CoinGecko API. The app has to be simple enough for user to understand how to use it and display data intuitively.
 
 ### Problem-Solving Strategy
 I had to break it down into smaller individual components and tackle it one step at a time. I had to rely on console.log() most of 
