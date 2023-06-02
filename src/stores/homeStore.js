@@ -30,7 +30,7 @@ const homeStore = create((set) => ({
         };
       });
 
-      set({ coins });
+      set({ coins: coins });
     } else {
       set({ coins: trending });
     }
@@ -52,6 +52,7 @@ const homeStore = create((set) => ({
         coinPriceUSD >= 1
           ? coinPriceUSD.toFixed(2)
           : coinPriceUSD.toPrecision(3);
+          // console.log(trendRes.data.coins)
 
       return {
         name: coin.item.name,

@@ -2,17 +2,35 @@ import { create } from "zustand";
 import axios from "axios";
 
 const nftStore = create((set) => ({
-  nft: [],
+  nfts: [],
+  nftData: [],
 
   fetchNFT: async () => {
     const resNFT = await axios.get(
       `https://api.coingecko.com/api/v3/nfts/list?order=market_cap_usd_desc&per_page=20`
     );
 
-    set({ nft: resNFT.data }); // update the state with the fetched data
+    const nfts = resNFT.data.map((nft) => {
+      return {
+        name: nft.name,
+        id: nft.id,
+      };
+    });
 
-    console.log(resNFT); // log the response
-    console.log(resNFT); // log the response
+    const nftDataPromises = nfts.map((nft) =>
+      axios.get(`https://api.coingecko.com/api/v3/nfts/${nft.id}`)
+    );
+
+    const resNFTdata = await Promise.all(nftDataPromises);
+
+    const nftData = resNFTdata.map((data) => {
+      return {
+        id: data.data.id,
+        floor: data.data.floor_price.usd,
+      };
+    });
+
+    set({ nfts: nfts, nftData: nftData });
   },
 }));
 

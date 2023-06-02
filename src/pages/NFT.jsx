@@ -1,14 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import CryptoStats from "../components/CryptoStats";
 import nftStore from "../stores/nftStore";
+import NFTList from "../components/NFTList";
 
 export default function NFT() {
-  const store = nftStore();
+  // const store = nftStore((state) => state);
+
+  // useEffect(() => {
+  //   store.fetchNFT();
+  // }, []);
+
+  const { nfts, fetchNFT } = nftStore((state) => ({
+    nfts: state.nfts,
+    fetchNFT: state.fetchNFT,
+  }));
 
   useEffect(() => {
-    store.fetchNFT();
+    fetchNFT();
   }, []);
 
   return (
@@ -16,10 +26,11 @@ export default function NFT() {
       <CryptoStats />
       <Header />
       <NavBar />
+
       <div className="trendingTitle">NFT</div>
       <div className="nftContainer">
-        {store.nft.map((nft) => (
-          <NFT key={nft.id}/>
+        {nfts.map((nft) => (
+          <NFTList key={nft.id} nft={nft} />
         ))}
       </div>
     </div>

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import TrendingCoins from "../components/TrendingCoins";
 import NavBar from "../components/NavBar";
 import CryptoStats from "../components/CryptoStats";
+import nftStore from "../stores/nftStore";
 
 export default function Home() {
   const store = homeStore();
