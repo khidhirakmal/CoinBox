@@ -53,9 +53,15 @@ Watchlist: User should be able to add cryptocurrencies and NFTs to favourites.
 https://www.coingecko.com/en/api/documentation
 
 Searchbar: `https://api.coingecko.com/api/v3/search?query=${query}`
+
 Bitcoin Price: `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_market_cap=true`
+
 Trending Coins: `https://api.coingecko.com/api/v3/search/trending`
+
 Market Chart: `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&days=30&interval=daily`
+
 Coin Data: `https://api.coingecko.com/api/v3/coins/${id}?localization=false&market_data=true`
+
 NFT List: `https://api.coingecko.com/api/v3/nfts/list?order=market_cap_usd_desc&per_page=5`
+
 NFT Data: `https://api.coingecko.com/api/v3/nfts/${nft.id}`
