@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import homeStore from "../stores/homeStore";
 import Header from "../components/Header";
-import TrendingCoins from "../components/TrendingCoins";
 import NavBar from "../components/NavBar";
-import CryptoStats from "../components/CryptoStats";
+import GlobalStats from "../components/GlobalStats";
 
 export default function Cryptocurrencies() {
   const store = homeStore();
@@ -28,7 +27,7 @@ export default function Cryptocurrencies() {
 
   return (
     <div>
-      <CryptoStats />
+      <GlobalStats />
       <Header />
       <NavBar />
       {showTrendingCoins ? (

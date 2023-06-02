@@ -12,7 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import Header from "./Header";
-import CryptoStats from "./CryptoStats";
+import GlobalStats from "./GlobalStats";
 import NavBar from "./NavBar";
 
 export default function CoinData() {
@@ -23,7 +23,7 @@ export default function CoinData() {
     store.fetchData(params.id);
   }, []);
 
-  if (store.loading) return <div className="loading">Loading...</div>; 
+  if (store.loading) return <div className="loading">Loading...</div>;
 
   const coinPrice = store.coinData.market_data.current_price.usd;
   const coinPriceFormat =
@@ -42,7 +42,7 @@ export default function CoinData() {
 
   return (
     <div>
-      <CryptoStats />
+      <GlobalStats />
       <Header back />
       <NavBar />
       <header className="show-header">

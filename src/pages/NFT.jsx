@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
-import CryptoStats from "../components/CryptoStats";
+import GlobalStats' from "../components/GlobalStats";
 import nftStore from "../stores/nftStore";
 import NFTList from "../components/NFTList";
 
@@ -23,7 +23,7 @@ export default function NFT() {
 
   return (
     <div>
-      <CryptoStats />
+      <GlobalStats />
       <Header />
       <NavBar />
 
