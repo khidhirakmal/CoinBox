@@ -45,9 +45,12 @@ I had to break it down into smaller individual components and tackle it one step
 the time to ensure that I am on the right track. My source of knowledge has been supplemented from stackoverflow, mozilla, ChatGPT and YouTube. 
 
 ### Unsolved problems
-Cryptocurrencies: User should be able to all crpytocurrencies
+Cryptocurrencies: User should be able to all crpytocurrencies.
+
 Header Overall Market: User should be able to see real-time overall market.
+
 NFT: Should be able to access more data when clicking on the NFT.
+
 Watchlist: User should be able to add cryptocurrencies and NFTs to favourites.
 
 ## APIs Used
