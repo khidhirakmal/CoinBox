@@ -28,7 +28,7 @@ Style Extension: Sass
 
 ### User Stories
 User is greeted with top 7 trending coins at the homepage at the current time. 
-At the same time able to access current overall crypto market statistics. (in progress)
+At the same time able to access current overall crypto market statistics.
 
 There is also a search bar for the user to search other cryptocurrencies. User should be able to access more data
 of the coin when they click on it. 
@@ -46,8 +46,6 @@ the time to ensure that I am on the right track. My source of knowledge has been
 
 ### Unsolved problems
 Cryptocurrencies: User should be able to all crpytocurrencies.
-
-Header Overall Market: User should be able to see real-time overall market.
 
 NFT: Should be able to access more data when clicking on the NFT.
 
