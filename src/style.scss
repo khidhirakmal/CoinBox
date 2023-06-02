@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+// @import url("./components/DarkModeToggle.jsx");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(18, 18, 18);
+  background-image: linear-gradient(rgb(43, 43, 43), rgb(18, 18, 18));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  // overflow: scroll;
+}
+
+// Coinbox Header //
+.cryptoStats {
+  padding: 2px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+  span {
+    margin: 0 20px;
+  }
+}
+
+.header {
+  display: flex;
+  height: 90px;
+  background: #1f1f1f;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(61, 60, 60, 0.8);
+}
+
+.coinbox-title {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: orange;
+}
+
+.coinbox-logo {
+  max-width: 55px;
+  border: 2px solid rgb(240, 237, 237);
+  border-radius: 100%;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.backArrow {
+  position: absolute;
+  transform: translate(-500%, -5%);
+  max-width: 4%;
+  max-height: 4%;
+}
+
+.navBar {
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: rgb(26, 26, 26);
+  border-bottom: 2px solid rgba(61, 60, 60, 0.8);
+
+  div {
+    justify-content: center;
+    align-items: center;
+  }
+  span {
+    text-decoration: none;
+    margin: 0 50px;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+  }
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover {
+    color: rgb(254, 165, 0);
+  }
+
+  a:active {
+    color: rgb(255, 68, 0);
+  }
+}
+
+// Loading page when fetching data //
+.loading {
+  font-size: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searchBar {
+  display: flex;
+  margin: 35px auto 20px auto;
+  justify-content: center;
+
+  input {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+// Coins Display //
+.coinsContainer {
+  margin: 50px auto;
+  max-width: 600px;
+
+  .coinsContainerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .coin {
+      float: left;
+      margin-right: 450px;
+      padding-bottom: 5px;
+    }
+    
+    .price {
+      float: right;
+    }
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+  }
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover {
+    color: rgb(254, 165, 0);
+  }
+
+  a:active {
+    color: rgb(255, 68, 0);
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+// Trending Title //
+.trendingTitle {
+  margin: 35px auto 20px auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.trendingCoins {
+  padding: 20px 0;
+  border-top: 2px solid rgb(50, 50, 50);
+}
+
+.trendingCoins:hover {
+  padding: 20px 0;
+  border-top: 2px solid rgb(50, 50, 50);
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+.trendingName {
+  display: inline;
+  margin: 0 20px;
+
+  .rank {
+    font-size: 10px;
+  }
+}
+
+.trendingPrice {
+  float: right;
+  margin-top: 6px;
+}
+
+.trendingImage {
+  margin-left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+// Coins Details Page //
+.show-header {
+  padding: 20px 0;
+  text-align: center;
+
+  img {
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+
+.show-header-coinTicker {
+  text-transform: uppercase;
+  color: rgb(182, 180, 180);
+}
+
+.show-header-coinPrice {
+  margin-top: 10px;
+}
+
+.show-details {
+  padding: 10px;
+  border-top: 2px solid rgb(50, 50, 50);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.show-details-block {
+  display: flex;
+  // gap: 10%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .block {
+    background-color: rgba(50, 50, 50, 0.219);
+    text-align: left;
+    width: 300px;
+  }
+
+  .details {
+    margin: 20px;
+  }
+}
+.show-graph {
+  height: 400px;
+  width: 70%;
+  margin: 15px auto;
+  padding-top: 10px;
+  text-align: center;
+
+  .graph-title {
+    margin-bottom: 20px;
+  }
+}
