@@ -32,6 +32,11 @@ export default function Home() {
       <CryptoStats />
       <Header />
       <NavBar />
+      {showTrendingCoins ? (
+        <div className="trendingTitle">Trending Coins</div>
+      ) : (
+        <div className="trendingTitle">Search Results</div>
+      )}
       <div className="searchBar">
         <input
           type="text"
@@ -40,11 +45,6 @@ export default function Home() {
           onChange={handleSearchInputChange}
         />
       </div>
-      {showTrendingCoins ? (
-        <div className="trendingTitle">Trending Coins</div>
-      ) : (
-        <div className="trendingTitle">Search Results</div>
-      )}
       <div className="coinsContainer">
         <div className="coinsContainerHeader">
           <h4 className="coin">Coin</h4>
