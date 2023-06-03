@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import "./style.scss";
 import CoinData from "./components/CoinData";
 import Cryptocurrencies from "./pages/Cryptocurrencies";
-import Watchlist from "./pages/Watchlist";
+// import Watchlist from "./pages/Watchlist";
 import NFT from "./pages/NFT";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,7 +15,7 @@ root.render(
       <Route index element={<Home />} />
       <Route path="/:id" element={<CoinData />} />
       <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-      <Route path="/watchlist" element={<Watchlist />} />
+      {/* <Route path="/watchlist" element={<Watchlist />} /> */}
       <Route path="/nft" element={<NFT />} />
     </Routes>
   </BrowserRouter>

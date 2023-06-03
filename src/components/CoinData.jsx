@@ -100,13 +100,6 @@ export default function CoinData() {
                 ({supplyPercentage}%)
               </span>
             </div>
-            {/* <div className="details">
-              <h3>Total Supply</h3>
-              <span>
-                {store.coinData.market_data.total_supply.toLocaleString()}
-              </span>
-            </div> */}
-
             <div className="details">
               <h3>Max Supply</h3>
               <span>{maxSupplyCheck}</span>
