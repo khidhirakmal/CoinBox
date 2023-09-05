@@ -1,4 +1,4 @@
-# CoinBox
+# CoinBox - https://coinbox-gamma.vercel.app/
 
 ## Description
 CoinBox is a cryptocurrency and NFT tracking platform, providing real-time insights into digital assets. It delivers real-time data on cryptocurrencies and Non-Fungible Tokens (NFTs), sourced directly from CoinGecko's reliable API.
